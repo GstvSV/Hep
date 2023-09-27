@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&family=Roboto:wght@100&display=swap');
+
+:root{
+	--cor1: #646464;
+	--bg: #F1F1F1;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+body{
+	background-color: lightgrey;
+}
+
+ h2{
+	color: #464646;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+header{
+	height: 33px;
+	width: 100%;
+	background-color: white;
+}
+
+header.container{
+	display: flex;
+	flex-direction:row-reverse;
+	align-items: flex-start;
+	background-color: white;
+}
+
+header div#telefone{
+	background-color: #078F47;
+	height: 25px;
+	width: 166px;
+	padding: 5px 5px 5px 5px;
+	color:white;
+	font-size: 1.15em;
+	font-weight: 100;
+	text-align: right;	
+}
+
+header > div >img{
+	display: block;
+	height: 24px;
+	position: absolute;
+	margin-right: 6px;
+}
+
+header > div > span{
+	margin-right: 5px;
+}
+
+menu{
+	background-color: white;
+	height: 57px;
+	width: 100%;
+	box-shadow: 2px 3px 5px rgb(0,0,0,0.2);	
+	font-size: 1.15em;
+	display: inline-block;
+	position: sticky;
+	top: 0;
+}
+
+menu div.container{
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 5px;
+	box-shadow: 2px 3px 5px rgb(0,0,0,0.2);	
+
+}
+
+
+menu a{
+	text-decoration: none;
+	height: 25px;
+	color: #078F47;
+	padding: 10px 15px;
+}
+
+menu a.primeiro{
+	margin-right: 70px;
+}
+
+menu a:hover{
+	background-color: #078F47;
+	color: white;
+}
+
+div#hep{
+	background-color: #D6DFEC;
+	background-image: url('../images/hep.png');
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 90vh;
+	width: 100%;
+}	
+
+section#qs{
+	background-color: white;
+}
+
+section h1{
+	color: #078F47;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 30px;
+	
+}
+
+section div.linha{
+	background-color: #078F47;
+	width: 25%;
+	height: 5px;
+	margin: auto;
+}
+
+#qs>div.container{
+	display: flex;
+	width: 60%;
+	margin: auto;
+	padding-top: 50px;
+	
+}	
+
+section>div.container> p{
+	color: var(--cor1);
+	text-align: justify;
+	font-size: 1.2em;
+	margin-left: 100px;
+}
+
+.qstodo{
+	display: flex;
+	flex-direction: row;
+	width: 70%;
+	margin: auto;
+}
+
+.qs{
+	width: 50%;
+	padding: 80px;
+}
+
+.qs>h3{
+	color: #545454;
+	padding-bottom: 30px;
+}
+
+.qs>p{
+	color: var(--cor1);
+	text-align: justify;
+	font-size: 1.2em;
+	padding-left: 10px;
+	padding-bottom: 50px;
+}
+
+.qs>ul{
+	color: var(--cor1);
+	font-size: 1.2em;
+	padding-left: 50px;
+}
+
+section#equipe{
+	background-color: var(--bg);
+}
+
+#equipe > div.container{
+	padding-top: 50px;
+	width: 60%;
+	margin: auto;
+}
+
+
+
+#equipe p{
+	color: var(--cor1);
+	text-align: center;
+	font-size: 1.2em;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+#equipe  div.lista{
+	margin: auto;
+	display: flex;
+	width: 80%;
+	justify-content: space-around;
+	padding-bottom: 30px;
+	
+}
+
+#equipe ul{
+	color: var(--cor1);
+	font-size: 1.2em;
+	list-style-type: none;
+}
+
+#conv{
+	background-color: white;
+}
+
+#conv > div p.texto {
+	color: var(--cor1);
+	font-size: 1.2em;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+}
+
+#conv #dconv{
+	width: 60%;
+	margin:auto
+}
+
+#conv #dconv .container{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 50px;
+	
+}
+
+#conv .imgconvenio{
+	width: 230px;
+	
+}
+
+#serv{
+	background-color:  var(--bg);
+}
+
+#serv .container{
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: auto;
+}
+
+#serv ul{
+	color: var(--cor1);
+	font-size: 1.2em;
+	align-self: center;
+	justify-self: center;
+	width: 50%;
+	padding-bottom: 50px;
+	padding-top: 30px;
+	line-height: 2em;
+	
+}
