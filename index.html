@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="estilos/style.css">
-	<title>Hospital Espirita de Pelotas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="./estilos/mediaqueries.css">
+    <title>Hospital Espirita de Pelotas</title>
 </head>
+
 <body>
-	<header class="container">
-		
-		<div id="telefone">
-			<img src="images/fone.png" alt="fone icon"><span>(53) 3228-1288</span>
-		</div>
-		
-	</header>
+    <header class="headerContainer">
 
-	<menu>
-        <div class="container">
-            <a href="#quem somos" target="_self" rel="next" >HEP</a>
-            <a href="#equipe" target="_self" rel="next">EQUIPE</a>
-            <a href="#convenios" target="_self" rel="next">CONVÊNIOS</a>
-            <a href="#servicos" target="_self" rel="next">SERVIÇOS</a>
-            <a href="#help" target="_self" rel="next">AJUDE</a>
-            <a href="#" target="_self" rel="next">TRABALHE CONOSCO</a>
-            <a href="#" target="_self" rel="next">TRANSPARÊNCIA</a>
-            <a href="#" target="_self" rel="next">NOTÍCIAS</a>
-            <a href="#" target="_self" rel="next" class="primeiro">CONTATO</a>
+        <div class="telefone">
+            <img class="telefone-icone" src="images/fone.png" alt="fone icon"><span>(53) 3228-1288</span>
         </div>
+        <a class="scroll-link" href="#inicio"><img class="header-logo" src="images/Logo.png" alt="Logo HEP"></a>
+        <menu class="menuContainer" id="menu">
+            <a class="scroll-link" href="#Qsomos" target="_self" rel="next">HEP</a>
+            <a class="scroll-link" href="#equipe" target="_self" rel="next">EQUIPE</a>
+            <a class="scroll-link" href="#convenios" target="_self" rel="next">CONVÊNIOS</a>
+            <a class="scroll-link" href="#servicos" target="_self" rel="next">SERVIÇOS</a>
+            <a class="scroll-link"  href="#help" target="_self" rel="next">AJUDE</a>
+            <a class="scroll-link" href="#contato" target="_self" rel="next" class="primeiro">CONTATO</a>
+            <a class="scroll-link disabled-link" href="#" target="_self" rel="next">TRANSPARÊNCIA</a>
+            <a class="scroll-link disabled-link" href="#" target="_self" rel="next">NOTÍCIAS</a>
+            <a class="scroll-link" href="#trabCon" target="_self" rel="next">TRABALHE CONOSCO</a>
+        </menu>
+        <div class="ham-container" onclick="clickMenu()">
+            <input type="checkbox" id="checkbox-menu">
+            <label class="ham-label" for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
 
-    </menu>
+    <section class="startImage" id="inicio">
+        <img class="startLogo" src="images/hepblogo.png" alt="Logo hep 2">
+    </section>
 
-	
-    <div id="hep">
-
-    </div>
-
-    <a name="quem somos">
-        <section id="qs">
-            <h1>QUEM SOMOS</h1>
-            <div class="linha"></div>
-            <div class="container">
-                <div><img src="images/logog.png" alt="Logo hep"></div>
-                <p>O <a href="index.html" target="_blank">Hospital</a> Espírita de Pelotas é uma instituição especializada, que há mais de setenta anos oferece para a população de Pelotas e região sul do estado serviços na área da psiquiatria.<br><br>
-                Somos referência para 22 municípios da 3 Coordenadoria Regional de Saúde, atendendo uma população de aproximadamente 1.000.000 habitantes. <br><br>
-                Contando com diversos serviços e processos terapêuticos, o Hospital Espírita de Pelotas mantém suas portas abertas 24 horas por dia, nos sete dias semana, estando pronto para auxiliar àqueles que precisarem de sua ajuda, seguindo o seguinte norte:</p>
+    <section class="Qsomos" id="Qsomos">
+        <h1 class="mainTitle">Quem somos</h1>
+        <article class="qs-container">
+            <div class="qs-innerContainer">
+                <img class="qs-image" src="images/logog.png" alt="Logo grande">
+                <div class="qs-text">
+                    <p>O Hospital Espírita de Pelotas é uma instituição que há mais de setenta anos oferece para a
+                        população de Pelotas e região sul do estado serviços na área da psiquiatria.</p>
+                    <p>Somos referência para 22 municípios da 3 Coordenadoria Regional de Saúde, atendendo uma população
+                        de aproximadamente 1.000.000 habitantes.</p>
+                    <p>Contando com diversos serviços e processos terapêuticos, o Hospital Espírita de Pelotas mantém
+                        suas portas abertas 24 horas por dia, nos sete dias semana, estando pronto para auxiliar àqueles
+                        que precisarem de sua ajuda, seguindo o seguinte norte:</p>
+                </div>
             </div>
-            <div class="qstodo">
-                <div class="qs">
-                    <h3>MISSÃO</h3>
-                    <p>Desenvolver ações de cuidado na área da saúde mental, primando tanto pela qualidade dos serviços ofertados, quanto pela responsabilidade social, além de agir em conformidade com a ciência, ética e espiritualidade.</p>
-                    <ul>
+            <div class="sub-container">
+                <div class="sub1">
+                    <h3 class="min-title">Missão</h3>
+                    <p class="sub-texto">Desenvolver ações de cuidado na área da saúde mental, primando tanto pela
+                        qualidade dos serviços ofertados, quanto pela responsabilidade social, além de agir em
+                        conformidade com a ciência, ética e espiritualidade.</p>
+                    <ul class="sub-list">
                         <li>Humanização do tratamento</li>
                         <li>Respeito ao ser humano</li>
                         <li>Busca pela excelência</li>
                         <li>Valorização dos colaboradores</li>
                     </ul>
                 </div>
-                <div class="qs">
-                    <h3>VISÃO</h3>
-                    <p>Ser reconhecido como hospital psiquiátrico de referência na região sul do país, em virtude da humanização do tratamento e da excelência na qualidade dos serviços ofertados.</p>
-                    <h3>VALORES</h3>
-                    <ul>
+                <div class="sub2">
+                    <h3 class="min-title">Visão</h3>
+                    <p class="sub-texto">Ser reconhecido como hospital psiquiátrico de referência na região sul do país,
+                        em virtude da humanização do tratamento e da excelência na qualidade dos serviços ofertados.</p>
+                    <h3 class="min-title">Valores</h3>
+                    <ul class="sub-list">
                         <li>Ética</li>
                         <li>Transparência</li>
                         <li>Responsbilidade social</li>
@@ -70,86 +85,337 @@
                     </ul>
                 </div>
             </div>
-        </section>
-    </a>
+        </article>
+    </section>
 
-    <a name="equipe">
-        <section id="equipe">
-            <h1>EQUIPE</h1>
-            <div class="linha"></div>
-            <div class="container">
-                <h2>EQUIPE TÉCNICA DO HOSPITAL ESPÍRITA DE PELOTAS</h2>
-                <p>O Hospital Espírita de Pelotas, objetivando ofertar o melhor tratamento possível aos seus pacientes, possui uma equipe multidisciplinar composta pelos seguintes profissionais:</p>
-                <div class="lista">
-                    <ul>
-                        <li>Médicos psiquiatras assistentes</li>
-                        <li>Médicos plantonistas</li>
-                        <li>Médicos clínicos</li>
-                        <li>Psicólogos</li>
-                        <li>Assistentes sociais</li>
-                        <li>Nutricionistas</li>
-                        <li>Farmacêuticas</li>
-                    </ul>
-                    <ul>
-                        <li>Educador físico</li>
-                        <li>Educadora artística</li>
-                        <li>Consultor químico</li>
-                        <li>Terapeuta Ocupacional</li>
-                        <li>Recreadores</li>
-                        <li>Enfermeiros</li>
-                        <li>Técnicos em enfermagem</li>
-                    </ul>
+    <section class="team" id="equipe">
+        <h1 class="mainTitle">Equipe</h1>
+        <h2 class="subTitle">Equipe técnica do Hospital Espirita de Pelotas</h2>
+        <p class="team-text">O Hospital Espírita de Pelotas, objetivando ofertar o melhor tratamento possível aos seus
+            pacientes, possui uma equipe multidisciplinar composta pelos seguintes profissionais:</p>
+        <div class="team-list_container">
+            <ul class="team-list">
+                <li>Médicos psiquiatras assistentes</li>
+                <li>Médicos plantonistas</li>
+                <li>Médicos clínicos</li>
+                <li>Psicólogos</li>
+                <li>Assistentes sociais</li>
+                <li>Nutricionistas</li>
+                <li>Farmacêuticas</li>
+            </ul>
+            <ul class="team-list">
+                <li>Educador físico</li>
+                <li>Educadora artística</li>
+                <li>Consultor químico</li>
+                <li>Terapeuta Ocupacional</li>
+                <li>Recreadores</li>
+                <li>Enfermeiros</li>
+                <li>Técnicos em enfermagem</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="convenios" id="convenios">
+        <h1 class="mainTitle">Convênios</h1>
+        <p class="convenio-text ">Na unidade Recanto o Hospital Espírita de Pelotas recebe pacientes que internam
+            particulares e por convênios médicos.</p>
+        <p class="convenio-text">Conheça os principais convênios médicos que possuímos:</p>
+        <div class="image-container">
+            <img class="convenio-image" src="images/unimed.jpg" alt="Logo Unimed">
+            <img class="convenio-image" src="images/ipe.jpg" alt="Logo Ipe">
+            <img class="convenio-image" src="images/cabergs.png" alt="Logo Cabergs">
+            <img class="convenio-image" src="images/casemprepa.jpg" alt="Logo Casembrapa">
+            <img class="convenio-image" src="images/cassi.jpg" alt="Logo Cassi">
+            <img class="convenio-image" src="images/prevpel.jpg" alt="Logo Prevpel">
+        </div>
+    </section>
+
+    <section class="services" id="servicos">
+        <h1 class="mainTitle">Serviços</h1>
+        <h2 class="subTitle">Serviços ofertados pelo Hospital Espírita de Pelotas</h2>
+        <ul class="services-list">
+            <li>Pronto atendimento psiquiátrico com porta de entrada 24h</li>
+            <li>Internação psiquiátrica adulta para ambos os sexos e para todas as patologias</li>
+            <li>Grupo de oficina terapêuticas</li>
+            <li>Atendimento médico/familiar</li>
+            <li>Atendimento serviço social/familiar</li>
+            <li>Reuniões do AA</li>
+            <li>Trabalho do Departamento Espiritual (mediante três requisitos: liberação médica, autorização da família
+                e interesse do paciente)</li>
+            <li>Projeto Cinema no HEP</li>
+        </ul>
+    </section>
+
+    <section class="help" id="help">
+        <h1 class="mainTitle">Ajude o HEP</h1>
+        <p class="help-text">Sua contribuição é sempre muito importante para ajudar o nosso Hospital a seguir ofertando
+            seus serviços à população.</p>
+        <p class="help-text">Conheça algumas formas de ajudar o Hospital:</p>
+        <h3 class="min-title">Nota Fiscal Gaúcha</h3>
+        <p class="nf-text">
+            <img class="nf-image" src="images/NotaFiscal.png" alt="">
+            Nota Fiscal Gaúcha é um programa que, por meio da distribuição de prêmios, visa incentivar os cidadãos e
+            cidadãs a solicitar a inclusão do CPF na emissão do documento fiscal no ato de suas compras, bem como
+            conscientizá-los sobre a importância social do tributo. Através do Programa, os cidadãos concorrem a prêmios
+            em dinheiro, as entidades sociais por eles indicadas são beneficiadas por repasses e as empresas
+            participantes reforçam sua responsabilidade social com o Estado e a sociedade gaúcha.
+            <br><br>
+            Participando da Nota Fiscal Gaúcha, você também estará auxiliando entidades sociais habilitadas no Programa,
+            das áreas da educação, saúde, trabalho e desenvolvimento social, a receber repasses de recursos do Estado.
+            Para isso, você deve efetuar seu cadastramento no Programa, indicando até quatro entidades sociais para
+            pontuarem junto com você. Clique <a class="nf-cad" href="">aqui</a> para se cadastrar.
+        </p>
+
+        <h3 class="min-title">Programa Hospital Saudável CEEE</h3>
+        <p class="phsc-text">
+            <img class="phsc-image" src="images/HospitalSaudavel.jpg" alt="">
+            O Programa permite que os interessados possam, através da conta de luz, acrescentar a doação de qualquer
+            quantia ao Hospital Espírita de Pelotas, fazendo com que esse recurso seja repassado para custear as
+            despesas da instituição.
+            <br><br>
+            O objetivo da campanha Programa Hospital Saudável é incrementar as fontes de receita dos hospitais,
+            localizados nos 72 municípios da área de concessão da CEEE, que poderão direcionar a arrecadação para
+            melhorias, ampliações, entre outros benefícios.
+            <br><br>
+            Entre em contato através do telefone <strong>3228 1288</strong> para obter mais informações sobre como aderir ao Programa
+            Hospital Saudável e ajudar o Hospital Espírita de Pelotas.
+        </p>
+
+        <h3 class="min-title">Doações</h3>
+        <p class="give-text">
+            <img class="give-imageL" src="images/imagem2.jpg" alt="">
+            Você pode ajudar o Hospital fazendo doação de gêneros alimentícios não perecíveis, roupas em boas condições de uso, roupas de cama e cobertores, produtos de higiene e limpeza e de higiene pessoal tais como escovas de dentes, pasta de dentes, aparelhos de barbear, absorventes, entre outros.
+            <img class="give-imageR" src="images/imagem1.jpg" alt="">
+            <br><br>
+            Doações de móveis, utensílios eletrônicos, computadores e periféricos entre outros também são bem vindas.
+            <br><br>
+            Se preferir doar algum valor em dinheiro você pode efetuar em uma das contas abaixo. 
+            Sua doação será utilizada para o custeio das diversas necessidades do Hospital.
+        </p>
+
+        <div class="bank">
+            <h4 class="bank-name">Banco Banrisul</h4>
+            <p class="bank-text">Agência 0320 <br> Conta Corrente 06.003429.0-3</p>
+            <h4 class="bank-name">Banco Caixa Econômica Federal</h4>
+            <p class="bank-text">Agência 0495 <br> Conta Corrente 00.30300326.2-7</p>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="contatoContainer">
+            <h1 class="mainTitlev2 ">Contato</h1>
+            <p>Entre em contato!</p>
+            <div class="contatoAll-container">
+                <div class="contato-itens">
+                    <div class="item-container">
+                        <img class="contato-tel" src="images/fone.png" alt="telefone">
+                        <p>Telefone</p>
+                    </div>
+                    <p class="item-text">(53) 32281288</p>
+                </div>
+
+                <div class="contato-itens">
+                    <div class="item-container">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <p>Facebook</p>
+                    </div>
+                    <p class="item-text"><a href="https://www.facebook.com/hospitalespiritadepelotas/">/hospitalespiritadepelotas</a></p>
+                </div>
+
+                <div class="contato-itens">
+                    <div class="item-container">
+                        <a href="#" class="fa fa-instagram"></a>
+                        <p>Instagram</p>
+                    </div>
+                    <p class="item-text"><a href="https://www.instagram.com/hospitalespirita.pel/">@hospitalespirita.pel</a></p>
                 </div>
             </div>
-        </section>
-    </a>
-	<a name="convenios">
-		<section id="conv">
-			<h1>CONVÊNIOS</h1>
-			<div class="linha"></div>
-			<div id="dconv"> 
-				<p class="texto">Na unidade Recanto o Hospital Espírita de Pelotas recebe pacientes que internam particulares e por convênios médicos.<br><br>
-				Conheça os principais convênios médicos que possuímos:</p>
-				<p class="container">
-					<img class="imgconvenio" src="images/unimed.jpg" alt="Logo unimed" height="85">
-					<img class="imgconvenio" src="images/ipe.jpg" alt="Logo ipe " height="135">
-					<img class="imgconvenio" src="images/cabergs.png" alt="Logo cabergs" height="82">
-				</p>
-				<p class="container">
-					<img class="imgconvenio" src="images/casemprepa.jpg" alt="Logo casembrapa" height="159">
-					<img class="imgconvenio" src="images/cassi.jpg" alt="Logo cassi" height="129">
-					<img class="imgconvenio" src="images/prevpel.jpg" alt="Logo prevpel" height="237">
-				</p>
-			</div>
-		</section>
-	</a>
-	<a name="servicos">
-		<section id="serv">
-			<h1>SERVIÇOS</h1>
-			<div class="linha"></div>
-			<div class="container">
-				<h2>SERVIÇOS OFERTADOS PELO HOSPITAL ESPÍRITA DE PELOTAS</h2>
-				<ul>
-					<li> Pronto atendimento psiquiátrico com porta de entrada 24h</li>
-					<li>Internação psiquiátrica adulta para ambos os sexos e para todas as patologias</li>
-					<li> Grupo de oficina terapêuticas</li>
-					<li>Atendimento médico/familiar</li>
-					<li>Atendimento serviço social/familiar</li>
-					<li> Trabalho do Departamento Espiritual (mediante três requisitos: liberação médica, autorização da família e interesse do paciente)</li>
-					<li> Projeto Cinema no HEP</li>
-					
-				</ul>
-			</div>
-		</section>
-	</a>
-	<a name="help">
-		<section id="help">
-			<h1>AJUDE O HEP</h1>
-			<div class="linha"></div>
-			<div id="dhelp"></div>
-			
-		</section>
-	</a>
-    
+        </div>
+
+        <form class="formulario" action="" autocomplete="off">
+            <label for="inome">Nome:</label>
+            <input class="campos" type="text" name="nome" id="inome" placeholder="Preencha seu Nome">
+
+            <label for="iemail">E-mail:</label>
+            <input class="campos" type="email" name="email" id="iemail" placeholder="Informe seu E-mail">
+
+            <label for="itel">Telefone:</label>
+            <input class="campos" type="tel" name="telefone" id="itel" placeholder="Telefone para contato">
+
+            <a href=""><label for="itext">Mensagem:</label></a>
+            <textarea class="campos" name="mensagem" id="itext" cols="20" rows="5" placeholder="Mensagem, sugestão ou dúvidas"></textarea>
+            
+            <button class="botao" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="trabCon" id="trabCon">
+        <h1 class="mainTitle">Trabalhe conosco</h1>
+        <p class="trabCon-text">Seja bem-vindo ao Trabalhe Conosco do HOSPITAL ESPÍRITA DE PELOTAS (HEP).
+        <br>
+        Candidate-se a possíveis oportunidades no HEP, preenchendo o formulário abaixo:</p>
+
+        <div class="trabCon-formContainer">
+            <div class="tccampo">
+                <label for="tcnome">Nome</label>
+                <input type="text" name="tcnome" id="tcnome">
+            </div>
+
+            <div class="tccampo left">
+                <label for="tctel">Telefone</label>
+                <input type="tel" name="tctel" id="tctel">
+            </div>
+
+            <div class="tccampo">
+                <label for="tcemail">E-mail</label>
+                <input type="email" name="tcemail" id="tcemail">
+            </div>
+
+            <div class="tccampo left">
+                <label for="tccidade">Cidade</label>
+                <input type="text" name="tccidade" id="tccidade">
+            </div>
+
+            <div class="tccampo">
+                <label for="tcaddress">Endereço</label>
+                <input type="text" name="tcaddress" id="tcaddress">
+            </div>
+
+            <div class="tccampo left">
+                <label for="tcescolaridade">Escolaridade</label>
+                <select name="tcescolaridade" id="tcescolaridade">
+                    <option value="Informe sua Escolaridade" disabled selected>Informe sua Escolaridade</option>
+                    <option value="Ensino Fundamental incompleto">Ensino Fundamental incompleto</option>
+                    <option value="Ensino Fundamental completo">Ensino Fundamental completo</option>
+                    <option value="Ensino Médio Incompleto">Ensino Médio Incompleto</option>
+                    <option value="Ensino Médio Completo">Ensino Médio Completo</option>
+                    <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                    <option value="Ensino Superior Completo">Ensino Superior Completo</option>
+                    <option value="Ensino Técnico Incompleto">Ensino Técnico Incompleto</option>
+                    <option value="Ensino Técnico Completo">Ensino Técnico Completo</option>
+                    <option value="Pós Graduação Incompleto">Pós Graduação Incompleto</option>
+                    <option value="Pós Graduação Completo">Pós Graduação Completo</option>
+                </select>
+            </div>
+
+            <div class="tccampo">
+                <label for="tcinteresse">Área de interesse</label>
+                <select name="tcinteresse" id="tcinteresse">
+                    <option value="Informe suas Áreas de Interesse" disabled selected>Informe suas Áreas de Interesse</option>
+                    <option value="Administração">Administração</option>
+                    <option value="Almoxerifado">Almoxarifado</option>
+                    <option value="Contabilidade">Contabilidade</option>
+                    <option value="Cozinha">Cozinha</option>
+                    <option value="Educação Física">Educação Física</option>
+                    <option value="Enfermagem">Enfermagem</option>
+                    <option value="Escritório">Escritório</option>
+                    <option value="Farmácia">Farmácia</option>
+                    <option value="Higienização">Higienização</option>
+                    <option value="Informática">Informática</option>
+                    <option value="Lavanderia e Rouparia">Lavanderia e Rouparia</option>
+                    <option value="Manutenção">Manutenção</option>
+                    <option value="Medicina">Medicina</option>
+                    <option value="Nutrição">Nutrição</option>
+                    <option value="Portaria">Portaria</option>
+                    <option value="Psicologia">Psicologia</option>
+                    <option value="Recepção">Recepção</option>
+                    <option value="Recreação">Recreação</option>
+                    <option value="Recursos Humanos">Recursos Humanos</option>
+                    <option value="Segurança do Trabalho">Segurança do Trabalho</option>
+                    <option value="Same">Same</option>
+                    <option value="Segurança">Segurança</option>
+                    <option value="Serviço Social">Serviço Social</option>
+                    <option value="Terapia Ocupacional">Terapia Ocupacional</option>
+                </select>
+            </div>
+
+            <div class="tccampo left">
+                <label for="tccapacidades">Descreva seus cursos de formação, especialização e outras capacitações</label>
+                <textarea name="tccapacidades"  id="tccapacidades" cols="30" rows="4"></textarea>
+            </div>
+            
+            <div class="tccampo">
+                <label for="tcexperiencia">Descreva suas últimas experiências profissionais</label>
+                <textarea name="tcexperiencia" id="tcexperiencia" cols="30" rows="6"></textarea>
+            </div>
+
+            <div class="tccampo left">
+                <label for="tcturno">Turno</label>
+                <select name="tcturno" id="tcturno">
+                    <option value="informe sua disponibilidade de horario" selected disabled>Informe sua disponibilidade de horário</option>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                    <option value="indiferente">Indiferente</option>
+                </select>
+            </div>
+
+            <div class="tccampo">
+                <label for="tcparente">Possui parentesco com algum colaborador do HEP?</label>
+                <select name="tcparente" id="tcparente">
+                    <option value="Possui parentesco com algum colaborador do HEP" disabled selected>Possui parentesco?</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <div class="tccampo left">
+                <label for="tcpcd">É pcd?</label>
+                <select name="tcpcd" id="tcpcd">
+                    <option value="É pcd?" disabled selected>É pcd?</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <div class="tccampo">
+                <label for="tcfuma">É fumante?</label>
+                <select name="tcfuma" id="tcfuma">
+                    <option value="é fumante">É fumante?</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <div class="tccampo">
+                <label for="tccurriculo">Curriculo com foto</label>
+                <input type="file" name="tccurriculo" id="tccurriculo">
+                <p>* Formatos de arquivo permitidos: *.doc, *.docx, *.odt, *.pdf, *.dot, *.gv e *.xps.</p>
+            </div>
+
+            <p class="trabCon-text details">Os currículos enviados passam a integrar o Banco de Currículos da Instituição e serão analisados periodicamente de acordo com a demanda de pessoal. Os currículos permanecem cadastrados durante 01 ano, a partir da data de recebimento.</p>
+
+            <button class="botao" type="submit">Enviar</button>
+        </div>
+    </section>
+
+    <section class="locale">
+        <div class="locale-container locale-address">
+            <div>
+                <h1 class="locale-title">Localização</h1>
+            </div>
+            <h3>Endereço</h3>
+            <p>Avenida Domingos de Almeida, 2969 <br>
+                Areal - Pelotas/RS <br>
+                CEP: 96085-470</p>
+        </div>
+
+        <div class="locale-container locale-map">
+            <h3>Mapa</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.6964910759652!2d-52.30727758440525!3d-31.751484419718253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b45b0744d1c1%3A0xffbdbc0048f9dadd!2sAv.%20Domingos%20de%20Almeida%2C%202969%20-%20Areal%2C%20Pelotas%20-%20RS%2C%2096085-470!5e0!3m2!1spt-BR!2sbr!4v1594231486322!5m2!1spt-BR!2sbr" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+
+        <div class="locale-container locale-facebook">
+            <h3>Facebook</h3>
+            <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/hospitalespiritadepelotas/" data-tabs="timeline" data-width="300" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=653764311773970&amp;container_width=400&amp;height=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fhospitalespiritadepelotas%2F&amp;locale=pt_BR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=400"><span style="vertical-align: bottom; width: 400px; height: 300px;"><iframe name="f21463f4acf4504" width="400px" height="300px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v5.0/plugins/page.php?adapt_container_width=true&amp;app_id=653764311773970&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3fefe398dccbf%26domain%3Dwww.hospitalespiritapelotas.com.br%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.hospitalespiritapelotas.com.br%252Ff3bce7c4e0592e4%26relation%3Dparent.parent&amp;container_width=400&amp;height=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fhospitalespiritadepelotas%2F&amp;locale=pt_BR&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=400" style="border: none; visibility: visible; width: 400px; height: 300px;" class=""></iframe></span></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Desenvolvido por <a href="#">Gustavo Silva Vieira</a></p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
+
 </html>

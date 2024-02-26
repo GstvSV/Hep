@@ -1,0 +1,61 @@
+
+:root{
+	--cor1: #646464;
+	--cor2: #078F47;
+	--bg: #F1F1F1;
+}
+
+@media screen and (max-width: 1286px) {
+    .menuContainer a{
+        width: min-content;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1161px){
+    .menuContainer{
+        gap: 0;
+    }
+
+    .locale-map{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 1099px){
+    .menuContainer{
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: .3rem .23rem;
+        position: absolute;
+        top: 2.2rem;
+        right: 0;
+        transform: translate(0%);
+        opacity: 0;
+        transition-duration: .5s;
+        flex-direction: column;
+    }
+
+    .headerContainer::before{
+        content: "Hospital Espirita de Pelotas";
+        color: var(--cor2);
+        font-size: 1.5rem;
+        order: 1;
+        
+    }
+
+    .ham-container{
+        display: flex;
+        transition: 1s;
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .locale{
+        flex-wrap: wrap;
+    }    
+
+    .locale-map{
+        order: 1;
+    }
+}
